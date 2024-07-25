@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+    --black: #3C3C3C;
+    --white: #F2F3FF;
+    --mix: linear-gradient(130deg, #60C669, #C660B1, #9EC660);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--mix);
+}
+.container{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.container form h1{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 60px;
+}
+.container form input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--white);
+    margin-top: 20px;
+    padding: 0 10px 0 30px;
+    font-size: 1.3em;
+    font-family: monospace;
+    color: var(--white);
+}
+.container form input::placeholder{
+    color: #A8A8A8;
+}
+img{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.pp{
+    display: none;
+}
+.remember .remember-me{
+    font-size: 1em;
+    width: 235px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    letter-spacing: px;
+}
+.remember #check{
+    width: 17px;
+    display: inline;
+    margin-top: -2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container form #btn{
+    margin-top: 30px;
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--white);
+    transition: all 1s;
+}
+.container form #btn:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.container form #login-link{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.1em;
+}
+.container form #login-link a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #4A39FF;
+    
+}
+.container form #login-link a:hover{
+    text-decoration: underline;
+    color: #D153F8;
+}
+.container form #google, #facebook{
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.container form #google:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.container form #facebook:hover{
+    background: var(--white);
+    color: var(--black);
+}

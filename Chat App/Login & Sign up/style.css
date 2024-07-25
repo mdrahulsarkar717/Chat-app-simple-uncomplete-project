@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+:root{
+    --black: #3C3C3C;
+    --white: #F2F3FF;
+    --mix: linear-gradient(130deg, #60C669, #C660B1, #9EC660);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(280deg, #60C669, #C660B1, #9EC660);
+}
+.login-container{
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login-container h1{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+.login-container input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--white);
+    padding: 0 10px 0 40px;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: monospace;
+    color: #F0FEFF;
+    margin-top: 30px;
+}
+.login-container input::placeholder{
+    color: #C8C8C8;
+    font-size: 0.8em;
+}
+
+.login-container form .person-icon{
+    position: absolute;
+    width: 30px;
+    margin-top: 35px;
+    margin-left: -330px; 
+}
+.login-container form .pass-icon{
+    width: 30px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -340px;
+}
+.login-container form .pass-eye{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: -35px;
+}
+.login-container form .eye .open-eye{
+    width: 30px;
+}
+.login-container form .eye .close-eye{
+    width: 30px;
+}
+.pp{
+    display: none;
+}
+.remember{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remember .remember-me{
+    font-size: 1.1em;
+    width: 135px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+.remember #check{
+    width: 17px;
+    display: inline;
+    margin-top: -2px;
+    border: none;
+    
+}
+.login-container form .remember a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #0820C9;
+}
+.login-container form .remember a:hover{
+    text-decoration: underline;
+    color: #6A09B0;
+}
+.login-container form #btn{
+    width: 100%;
+    height: 38px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 1s;
+    color: var(--white);
+}
+.login-container form #btn:hover{
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.login-container form .signup p{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+}
+.login-container form .signup p a{
+    text-decoration:none;
+    font-weight: bold;
+    color: #1E10C6;
+}
+.login-container form .signup p a:hover{
+    text-decoration: underline;
+    color: #A90CC7;
+}
+.login-container form #google{
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.login-container form #facebook{ 
+ width: 90%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.login-container form #google:hover{
+    background: var(--white);
+    color: var(--black);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.login-container form #facebook:hover{
+    background: var(--white);
+    color: var(--black);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
